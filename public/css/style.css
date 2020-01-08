@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:500&subset=latin,latin-ext);
 @import url('https://fonts.googleapis.com/css?family=Gelasio|Kulim+Park|Nanum+Myeongjo|Nanum+Gothic|Noto+Sans|Noto+Sans+KR|Roboto&display=swap');
+@import url(syntax/monokai.css);
 
 :root {
   --blue: #007bff;
@@ -153,13 +154,6 @@ a.nav-item:hover { color: #777; }
 .post-list > li {
 }
 
-span.post-date {
-	text-transform: uppercase;
-	font-size: 80%;
-	color: #555;
-	letter-spacing: 1px;
-}
-
 .post-link {
 	margin-left: 10px;
 	font-size: 110%;
@@ -274,7 +268,12 @@ header.home {
 }
 
 .post-date {
+	text-transform: uppercase;
+	color: #555;
+	letter-spacing: 1px;
 	font-size: 0.8em;
+	display: inline-block;
+	width: 80px;
 }
 
 .author .author-image {
