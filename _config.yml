@@ -24,7 +24,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Themed by ejjoo
 # baseurl: "/" # the subpath of your site, e.g. /blog
 # url: "http://ejjoo.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-url: MingNine9999.github.io
+url: http://MingNine9999.github.io
 github_username: MingNine9999
 highlighter: rouge
 svg:
@@ -37,6 +37,10 @@ plugins:
   - jekyll-feed
 category_dir: category/
 tag_dir: tag/
+
+comment:
+    type: disqus
+    shortname: ming
 
 # Exclude from processing.
 # The following items will not be processed, by default.
