@@ -1,4 +1,9 @@
 ---
 layout: default
+comments: true
 ---
 {% include post.html %}
+
+    {% if page.comments == true %}
+        {% include disqus_comments.html %}
+    {% endif %}
