@@ -2,7 +2,7 @@
 layout: post
 title: Hello World!
 date: 2021-01-24 23:09:00 +0900
-category: test
+category: Hello
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About
+title: about_Ming
 date: 2021-01-25 00:16:00 +0900
-permalink: /about
+permalink: /aboutMing
 
 ---
 
