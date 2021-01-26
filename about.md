@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: About
 date: 2021-01-25 00:16:00 +0900
-category: test
+permalink: /about
 
 ---
 
