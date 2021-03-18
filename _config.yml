@@ -23,7 +23,7 @@ email: seolgi911@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Data Engineer
 # baseurl: "/" # the subpath of your site, e.g. /blog
-url: "arisongkang.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://arisong-kang.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: arisong-Kang
 highlighter: rouge
 svg:
