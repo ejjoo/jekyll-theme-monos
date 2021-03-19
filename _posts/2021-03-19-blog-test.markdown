@@ -14,4 +14,4 @@ print 'hello world'
 ```
 
 
-![cat](../public/img/cat.JPG)
+![cat](/public/img/cat.JPG)
