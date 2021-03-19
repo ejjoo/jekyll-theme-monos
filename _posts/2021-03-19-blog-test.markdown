@@ -1,0 +1,17 @@
+---
+layout: post
+title:  "Blog Test!"
+date:   2021-03-19 09:00:00 +0900
+categories: elasticsearch kibana
+---
+
+# Blog Test
+> My first post!
+
+This is code
+```ruby
+print 'hello world'
+```
+
+
+![cat](../public/img/cat.JPG)
