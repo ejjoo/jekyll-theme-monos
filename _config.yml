@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Sierra Base
+title: Drone_beginner_course
 email: wogud5581@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Drone Beginner Course
+  SierraBase
 baseurl: "https://jaehyung-jung.github.io/about/"
 url: "https://jaehyung-jung.github.io/about/"
 github_username: JaeHyung-Jung
