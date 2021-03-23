@@ -8,6 +8,8 @@ date:  2021-03-23 10:00:00 +0900
 
 categories: elasticsearch
 
+comments: true 
+
 ---
 
 

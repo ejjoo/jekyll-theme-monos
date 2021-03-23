@@ -56,3 +56,5 @@ tag_dir: tag/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+disqus_shortname: arisong-kang.github.io
