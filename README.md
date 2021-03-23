@@ -16,7 +16,4 @@ permalink: /about/
 * JavaScript
 * Scala
 * Spark
-
-
-##  
 * ![update_icon](/public/img/update_icon.png) 업데이트중
