@@ -39,19 +39,19 @@ categories: elasticsearch
 
 * Timeseries data라면 rollover index 를 사용이 편리
 * 조금 더 깊은 레벨로 관리하고 싶다면 Curator(인덱스 관리 도구) 사용 검토필요 
-  * 기능 리스트 : https://www.elastic.co/guide/en/elasticsearch/client/curator/5.4/about.html
-  * 깃허브 링크 : https://github.com/elastic/curator
+  * 기능 리스트 : [https://www.elastic.co/guide/en/elasticsearch/client/curator/5.4/about.html](https://www.elastic.co/guide/en/elasticsearch/client/curator/5.4/about.html)
+  * 깃허브 링크 : [https://github.com/elastic/curator](https://github.com/elastic/curator)
 * Rollup API
   * 오래된 인덱스의 필요한 통계치만 저장하여 저장 공간을 쉽게 줄여주는 데이터 관리 방법중 하나
   * 데이터를 미리 aggregation 하여 통계 데이터만 보는 방법
   * query&aggregaion을 미리 등록해두고 scedule을 설정하는 것으로 사용 가능
-  * 참고 페이지 :  https://www.elastic.co/guide/en/elasticsearch/reference/master/rollup-job-config.html
+  * 참고 페이지 :  [https://www.elastic.co/guide/en/elasticsearch/reference/master/rollup-job-config.html](https://www.elastic.co/guide/en/elasticsearch/reference/master/rollup-job-config.html)
 
 
 
 # 검색 속도 튜닝
 
-* 참고페이지: https://www.elastic.co/guide/en/elasticsearch/reference/master/tune-for-search-speed.html
+* 참고페이지: [https://www.elastic.co/guide/en/elasticsearch/reference/master/tune-for-search-speed.html](https://www.elastic.co/guide/en/elasticsearch/reference/master/tune-for-search-speed.html)
 * 파일 시스템 캐시에 메모리 부여
 * SSD, 빠른 CPU 사용
 * Document Modeling
@@ -67,7 +67,7 @@ categories: elasticsearch
 
 # 인덱싱 성능 고려사항
 
-* 참고페이지: https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing
+* 참고페이지: [https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing](https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing)
 
   
 
