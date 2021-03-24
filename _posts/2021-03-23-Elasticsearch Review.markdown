@@ -20,6 +20,9 @@ comments: true
 
 
 
+
+
+
 # 인덱스당 적정한 샤드와 레플리카 수
 
 * 클러스터내 노드 사이에 이동하는 가장 작은 단위의 파일
@@ -35,7 +38,9 @@ comments: true
 * 샤드의 1개 사이즈는 20~30GB 권고 
 * 검색 위주의 클러스터면 20GB에 가까울수록 좋고, 단순 로깅 목적이라면 50GB 까지도 고려가능
 
+  
 
+  
 
 # 오래된 인덱스를 관리할 방법?
 
@@ -48,8 +53,10 @@ comments: true
   * 데이터를 미리 aggregation 하여 통계 데이터만 보는 방법
   * query&aggregaion을 미리 등록해두고 scedule을 설정하는 것으로 사용 가능
   * 참고 페이지 :  [https://www.elastic.co/guide/en/elasticsearch/reference/master/rollup-job-config.html](https://www.elastic.co/guide/en/elasticsearch/reference/master/rollup-job-config.html)
-
-
+  
+    
+  
+    
 
 # 검색 속도 튜닝
 
@@ -65,12 +72,16 @@ comments: true
 * 숫자 필드의 경우 keyword 보다는 integer 또는 long 으로 매핑
 * [Adaptive Replica Selection](https://www.elastic.co/guide/en/elasticsearch/reference/current/tune-for-search-speed.html#_turn_on_adaptive_replica_selection)
 
+  
 
+  
 
 # 인덱싱 성능 고려사항
 
 * 참고페이지: [https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing](https://www.elastic.co/blog/performance-considerations-elasticsearch-indexing)
 
+  
+  
   
 
 # index를 close 할 때의 이점
@@ -83,3 +94,15 @@ comments: true
 * elasticsearch 6.6부터 frozen indices 기능 추가
   * 기본적으로 close indices와 같음
   * 검색요청이 들어오면 open 하여 검색하고 자동으로 다시 close 시킴
+  
+
+
+
+
+
+
+
+
+
+
+---
