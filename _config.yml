@@ -34,6 +34,7 @@ highlighter-theme: monokai
 date_format: "%Y-%M-%D"
 plugins:
   - jekyll-feed
+  - jekyll-algolia
 category_dir: category/
 tag_dir: tag/
 
@@ -58,3 +59,13 @@ tag_dir: tag/
 #   - vendor/ruby/
 
 disqus_shortname: arisong-kang.github.io
+
+# algolia search
+algolia:
+  application_id: GXB9W1Z2EC
+  index_name: arisong_blog # You can replace that with whatever name you want
+  files_to_exclude: []
+  nodes_to_index: 'article'
+  search_only_api_key: 19012ce052f35bf0fe128160ac98d4ff
+
+  
