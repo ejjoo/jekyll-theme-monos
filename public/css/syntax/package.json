@@ -10,6 +10,5 @@
   "license": "UNLICENSE",
   "bugs": {
     "url": "https://github.com/richleland/pygments-css/issues"
-  },
-  "homepage": "https://github.com/richleland/pygments-css#readme"
+  }
 }
