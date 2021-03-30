@@ -44,7 +44,7 @@ $ rosrun turtlesim turtle_teleop_key
 
  
 
-![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=turtle\_key.png](.gitbook/assets/image%20%282%29.png)
+![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=turtle\_key.png](.gitbook/assets/image%20%283%29.png)
 
 If you run teleop and operate it with the keyboard, the turtle summoned by the turtlesim node will move as shown in the picture above.
 
@@ -75,7 +75,7 @@ $ rosrun rqt_graph rqt_graph
 
 You can see a picture similar to the one below
 
-![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=rqt\_graph\_turtle\_key.png](.gitbook/assets/image%20%289%29.png)
+![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=rqt\_graph\_turtle\_key.png](.gitbook/assets/image%20%2811%29.png)
 
 In rqt_graph above, /teleopturtle and /turtlesim are nodes, and teleop publishes a topic named /turtle1/command_\_velocity. Then /turtlesim node subscribes the topic\(/turtle1/command\_velocity\) to get the input of key.
 
@@ -151,7 +151,7 @@ This means that a topic type is defined by the message type published on it. The
 
 Data is exchanged between nodes through messages. Messages are in the form of variables such as integers, floating points, and booleans.
 
-![Source : https://cafe.naver.com/openrt/2468 \(CC BY-NC 3.0\)](.gitbook/assets/image%20%288%29.png)
+![Source : https://cafe.naver.com/openrt/2468 \(CC BY-NC 3.0\)](.gitbook/assets/image%20%2810%29.png)
 
 In the picture above, suppose that node 1 is a publish node and node 2 is a subscribe node.
 
@@ -204,7 +204,7 @@ Let's see the concept of of Node through the practice process of roscore and nod
  roscore
 ```
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%286%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%287%29.png)
 
 With the command "roscore", run master\_node
 
@@ -236,19 +236,19 @@ Master node communicates with other nodes through \*XMLRPC
 
 Run the publish\_node with the command "rosrun" or "roslaunch".
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%283%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%284%29.png)
 
 When publish\_node run after the command input, it register it's name of node, name of topic, type of message, adress of URI or port to master\_node.
 
 **4 \) Master node inform about publish\_node to Subscribe\_node**
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2810%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2812%29.png)
 
 Master node send information\(/name of node, /name of topic, /type of message, /adress of URI & port\) about publish\_node to Subscribe\_node.
 
 **5 \) Subscibe node requests connection to Publish node** 
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2812%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2814%29.png)
 
 Subscribe node requests connection to publish node with information\(/name of node, /name of topic, /type of message, /adress of URI & port\)
 
@@ -256,7 +256,7 @@ After publish node get the request, publish node respond with information of nod
 
 Then subscribe node make a client about publish node to connect with publish node.
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2815%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2818%29.png)
 
 After subscribe node is connected to publish node, publish node send message on topic to subscribe node.
 
