@@ -50,7 +50,7 @@ Since it has 8 rotors, it is more stable than a hexa**-**copter, but it consumes
 
 ### Components of Drone
 
-![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Drone\_Diagram.jpg/600px-Drone\_Diagram.jpg](.gitbook/assets/image%20%285%29.png)
+![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Drone\_Diagram.jpg/600px-Drone\_Diagram.jpg](.gitbook/assets/image%20%288%29.png)
 
 Drone consists of **N motors**, **rotors**, **frame**, **FC**, **gyroscope** and **acceleration sensor**, **gimbal motor**, **LIDAR**, **communication module**, **battery**, and **camera**.
 
@@ -74,21 +74,17 @@ Roll is an axis in a horizontal plane parallel to the direction of flight‌
 
 The yaw is an axis in a vertical plane perpendicular to the direction of travel.
 
-![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Pitch\_Roll\_and\_Yaw.svg/800px-Pitch\_Roll\_and\_Yaw.svg.png](.gitbook/assets/image%20%282%29.png)
+![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Pitch\_Roll\_and\_Yaw.svg/800px-Pitch\_Roll\_and\_Yaw.svg.png](.gitbook/assets/image%20%283%29.png)
 
 ### Flight Principle
 
 #### Take Off
-
-
 
 ```text
 Need to modify
 ```
 
 #### Landing
-
-
 
 ```text
 Need to modify
