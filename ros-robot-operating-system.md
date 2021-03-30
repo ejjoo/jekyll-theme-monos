@@ -42,7 +42,7 @@ $ rosrun turtlesim turtle_teleop_key
 
  
 
-![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=turtle\_key.png](.gitbook/assets/image%20%281%29.png)
+![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=turtle\_key.png](.gitbook/assets/image%20%282%29.png)
 
 If you run teleop and operate it with the keyboard, the turtle summoned by the turtlesim node will move as shown in the picture above.
 
@@ -73,7 +73,7 @@ $ rosrun rqt_graph rqt_graph
 
 You can see a picture similar to the one below
 
-![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=rqt\_graph\_turtle\_key.png](.gitbook/assets/image%20%286%29.png)
+![Source : http://wiki.ros.org/ko/ROS/Tutorials/UnderstandingTopics?action=AttachFile&amp;do=get&amp;target=rqt\_graph\_turtle\_key.png](.gitbook/assets/image%20%289%29.png)
 
 In rqt_graph above, /teleopturtle and /turtlesim are nodes, and teleop publishes a topic named /turtle1/command_\_velocity. Then /turtlesim node subscribes the topic\(/turtle1/command\_velocity\) to get the input of key.
 
@@ -149,7 +149,7 @@ This means that a topic type is defined by the message type published on it. The
 
 Data is exchanged between nodes through messages. Messages are in the form of variables such as integers, floating points, and booleans.
 
-![Source : https://cafe.naver.com/openrt/2468 \(CC BY-NC 3.0\)](.gitbook/assets/image%20%285%29.png)
+![Source : https://cafe.naver.com/openrt/2468 \(CC BY-NC 3.0\)](.gitbook/assets/image%20%288%29.png)
 
 In the picture above, suppose that node 1 is a publish node and node 2 is a subscribe node.
 
@@ -159,11 +159,116 @@ For detailed information related to the node, such as the communication order be
 
 ### Using rostopic type
 
+rostopic type returns the message type of any topic being published. Enter below command.
 
+```text
+$ rostopic type /turtle1/cmd_vel
+```
+
+Then you can see
+
+```text
+geometry_msgs/Twist
+```
+
+We can look at the details of the message using rosmsg:
+
+```text
+$ rosmsg show geometry_msgs/Twist
+```
+
+```text
+geometry_msgs/Vector3 linear
+  float64 x
+  float64 y
+  float64 z
+geometry_msgs/Vector3 angular
+  float64 x
+  float64 y
+  float64 z
+```
 
 ## ROS Node
 
+ROS node is an executable file of ROS package. ROS node communicates with other nodes using the ROS client library.
+
+Also, a node can provide or use a service on a topic.
+
+Let's see the concept of of Node through the practice process of roscore and node\(rosrun, roslaunch\).
+
+**1\) Run the master\_node**
+
+```text
+ roscore
+```
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%286%29.png)
+
+With the command "roscore", run master\_node
+
+For node-to-node access, the master registers the names of nodes, the name of the topic and service, the message type, the URI address, and the port, and informs other nodes of this information when requested.
+
+
+
+**2\) Run the subscribe node**
+
+ You can run subscribe node with the command "rosrun" or "roslaunch"
+
+```text
+ rosrun "package_name node_name"
+```
+
+```text
+ roslaunch "package_name launch_name"
+```
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image.png)
+
+When subscribe\_node run after the command input, it register it's name of node, name of topic, type of message, adress of URI & port.
+
+Master node communicates with other nodes through \*XMLRPC
+
+\*XMLRPC is a kind of RPC protocol. We don't need to understand the principles of XMLRPC in detail.    Just know that the master node communicates with the general node through XMLRPC.
+
+**3\) Run the publish\_node**
+
+Run the publish\_node with the command "rosrun" or "roslaunch".
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%283%29.png)
+
+When publish\_node run after the command input, it register it's name of node, name of topic, type of message, adress of URI or port to master\_node.
+
+**4 \) Master node inform about publish\_node to Subscribe\_node**
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2810%29.png)
+
+Master node send information\(/name of node, /name of topic, /type of message, /adress of URI & port\) about publish\_node to Subscribe\_node.
+
+**5 \) Subscibe node requests connection to Publish node** 
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2811%29.png)
+
+Subscribe node requests connection to publish node with information\(/name of node, /name of topic, /type of message, /adress of URI & port\)
+
+After publish node get the request, publish node respond with information of node.
+
+Then subscribe node make a client about publish node to connect with publish node.
+
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2814%29.png)
+
+After subscribe node is connected to publish node, publish node send message on topic to subscribe node.
+
 ## ROS Service
+
+There are many ways to communicate between nodes in ROS system.
+
+Let's see the differences between ROS Topic and ROS Service
+
+1\) ROS Topic
+
+2\) ROS Service
+
+3\) ROS Action
 
 
 
