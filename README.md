@@ -86,7 +86,7 @@ Then, what is firmware? : Firmware is a specific class of computer software that
 
 {% tabs %}
 {% tab title="PX4" %}
-![Source : https://px4.io/wp-content/uploads/2020/03/PX4\_logo\_black\_large\_resized\_compressed-compressor.png](.gitbook/assets/image%20%2812%29.png)
+![Source : https://px4.io/wp-content/uploads/2020/03/PX4\_logo\_black\_large\_resized\_compressed-compressor.png](.gitbook/assets/image%20%2813%29.png)
 
 PX4 autopilot is an open-source autopilot system oriented toward inexpensive autonomous aircraft.
 

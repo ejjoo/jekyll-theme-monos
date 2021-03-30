@@ -248,7 +248,7 @@ Master node send information\(/name of node, /name of topic, /type of message, /
 
 **5 \) Subscibe node requests connection to Publish node** 
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2811%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2812%29.png)
 
 Subscribe node requests connection to publish node with information\(/name of node, /name of topic, /type of message, /adress of URI & port\)
 
@@ -256,7 +256,7 @@ After publish node get the request, publish node respond with information of nod
 
 Then subscribe node make a client about publish node to connect with publish node.
 
-![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2814%29.png)
+![Source : https://cafe.naver.com/openrt/2468](.gitbook/assets/image%20%2815%29.png)
 
 After subscribe node is connected to publish node, publish node send message on topic to subscribe node.
 

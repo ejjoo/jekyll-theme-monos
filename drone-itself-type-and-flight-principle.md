@@ -50,7 +50,7 @@ Since it has 8 rotors, it is more stable than a hexa**-**copter, but it consumes
 
 ### Components of Drone
 
-![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Drone\_Diagram.jpg/600px-Drone\_Diagram.jpg](.gitbook/assets/image%20%2813%29.png)
+![Source : https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Drone\_Diagram.jpg/600px-Drone\_Diagram.jpg](.gitbook/assets/image%20%2814%29.png)
 
 Drone consists of **N motors**, **rotors**, **frame**, **FC**, **gyroscope** and **acceleration sensor**, **gimbal motor**, **LIDAR**, **communication module**, **battery**, and **camera**.
 
