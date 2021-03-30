@@ -14,9 +14,11 @@ will be edited later :D
 
 ## ROS Topic
 
+### What is ROS Topic?
+
 Topic is a channel through which nodes can communicate. Some communication occurs between the two programs, and some messages are exchanged. This path is called '**topic**'.
 
-If you do not understand from the explanation above, look at an example of using a topic in ROS and find out the role of the topic in the example.
+If you do not understand from the explanation above, look at an example of using a topic in ROS and find out the role of the topic in the ROS Topic tutorial.
 
 ### ROS Topic tutorial
 
@@ -292,8 +294,4 @@ Let's see the differences between them.
 *  Type of message communication is asynchronomous, similar to the topic.
 
 ![](.gitbook/assets/ros-action-.png)
-
-\*\*\*\*
-
-
 
