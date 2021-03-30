@@ -86,7 +86,7 @@ Then, what is firmware? : Firmware is a specific class of computer software that
 
 {% tabs %}
 {% tab title="PX4" %}
-![Source : https://px4.io/wp-content/uploads/2020/03/PX4\_logo\_black\_large\_resized\_compressed-compressor.png](.gitbook/assets/image%20%283%29.png)
+![Source : https://px4.io/wp-content/uploads/2020/03/PX4\_logo\_black\_large\_resized\_compressed-compressor.png](.gitbook/assets/image%20%284%29.png)
 
 PX4 autopilot is an open-source autopilot system oriented toward inexpensive autonomous aircraft.
 
@@ -98,7 +98,7 @@ We will choose Gazebo as an Simulator, and there are two ways of simulating : SI
 {% endtab %}
 
 {% tab title="Ardupilot" %}
-![Source : https://ardupilot.org/application/files/6315/7552/1962/ArduPilot-Motto.png](.gitbook/assets/image%20%282%29.png)
+![Source : https://ardupilot.org/application/files/6315/7552/1962/ArduPilot-Motto.png](.gitbook/assets/image%20%283%29.png)
 
 ArduinoPilot is an open source software for remote control or automation of software-operated devices such as unmanned vehicles and drones.
 
