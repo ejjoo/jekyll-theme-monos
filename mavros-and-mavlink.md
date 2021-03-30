@@ -16,6 +16,8 @@ description: They are bridge and communication protocol between FC < - > GCS
 
 MAVLink is a protocol for communicating with small unmanned vehicle.
 
+MAVLink protocol ~~enable the communication~~ between GCS\(Ground Control Station\) and PX4 
+
 
 
 ###  Packet
