@@ -258,17 +258,42 @@ Then subscribe node make a client about publish node to connect with publish nod
 
 After subscribe node is connected to publish node, publish node send message on topic to subscribe node.
 
-## ROS Service
+## ROS message communication
 
 There are many ways to communicate between nodes in ROS system.
 
-Let's see the differences between ROS Topic and ROS Service
+Let's see the differences between them.
 
-1\) ROS Topic
+### **1\) ROS Topic**
 
-2\) ROS Service
+* One-way, asynchronous communication
+* Publisher : message send, Subscriber : message reception
+* communication way : \(1:n, 1:1, n:1, n:n\) 
 
-3\) ROS Action
+![](.gitbook/assets/ros-topic-.png)
+
+\*\*\*\*
+
+### **2\) ROS Service**
+
+*  Two-way, synchronous communication
+*  Communicate between service server, service client
+*  Server responds only when there is a client request
+*   Node disconnected when request and response are disconnected
+
+![](.gitbook/assets/ros-service-.png)
+
+\*\*\*\*
+
+### **3\) ROS Action**
+
+*  Two-way, asynchronous communication
+*  Use if feedback is needed during request.
+*  Type of message communication is asynchronomous, similar to the topic.
+
+![](.gitbook/assets/ros-action-.png)
+
+\*\*\*\*
 
 
 
