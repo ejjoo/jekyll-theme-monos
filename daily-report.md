@@ -37,25 +37,27 @@ GCS란 지상통제소이다.
 mavlink를 알기전에 mavros부터 알아보면서 mavlink를 알아보자.  
   
 ‌  
-MAVROS는 mavlink를 통해 ROS에서 동작하는 node를 만든다.  
+**MAVROS는 mavlink를 통해 ROS에서 동작하는 node를 만든다.**  
   
 ‌  
-Onboard system\(rasp pi\)에 설치되며 fc와  onboard, gcs의 통신을 담당한다.  
+**Onboard system\(rasp pi\)에 설치되며 fc와  onboard, gcs의 통신을 담당한다.**  
   
 ‌  
-MAVROS가 FC와 GCS를 이어주는 다리역할을 하는데 이 다리를 정확히 말하면 MAVROS가 생성한 ROS와 통신이 가능한 node가 그것이다.  
+**MAVROS가 FC와 GCS를 이어주는 다리역할을 하는데 이 다리를 정확히 말하면 MAVROS가 생성한 ROS와 통신이 가능한 node가 그것이다.**  
   
-그 노드사이의 통신을 MAVLink protocol type인 메세지를 통해 통신한다.
+**그 노드사이의 통신을 MAVLink protocol type인 메세지를 통해 통신한다.**
 
 정리하자면 FC\(Pixhawk\) &lt;-mavlink type message-&gt; Onboard\(Rasp pi\) &lt;- mavlink type message -&gt; GCS
 
-실제 드론 운용은 위와같은 system으로 이루어지고, FC가 없을때 시뮬레이팅 하는 방법은 다음 두 가지가 있다.
+실제 드론 운용은 위와같은 system으로 이루어지고, FC가 없을때 시뮬레이팅 하는 방법은 **다음 두 가지가 있다. \(매번 드론을 날릴수 없으니 시뮬레이팅을하는데 \)**
 
-SITL은 FC없이 드론의 비행을 가상 시뮬레이터인 가제보 안의 가상환경에서 드론을 비행시키며 PX4 소프트웨어만으로 비행 시뮬레이팅하는 방식이다.
+**SITL은 FC없이 드론의 비행을 가상 시뮬레이터인 가제보 안의 가상환경에서 드론을 비행시키며 PX4 소프트웨어만으로 비행 시뮬레이팅하는 방식이다.**
 
-HITL이란 FC를 시뮬레이터\(Gazebo\)에 연결하여 시뮬레이션 하는 방식으로  FC에서는 PX4가 작동한다.
+**SITL하면 컴퓨터만으로 시뮬레이션**
 
+**HITL이란 FC를 시뮬레이터\(Gazebo\)에 연결하여 시뮬레이션 하는 방식으로  FC에서는 PX4가 작동한다.**
 
+**HITL은 FC\(Pixhawk\)를 컴퓨터에 연결해서 시뮬레이션**
 
 
 
