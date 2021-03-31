@@ -10,13 +10,17 @@ description: They are bridge and communication protocol between FC < - > GCS
 
 ## What is MAVROS?
 
+MAVROS is a project that develops a node operating in ROS using MAVLink protocol.
+
+MAVROS can be installed in Onboard\_System, be responsible for communication between FC &lt;-&gt; Onboard &lt;-&gt; GroundStation
+
 
 
 ## What is MAVLink?
 
 MAVLink is a protocol for communicating with small unmanned vehicle.
 
-MAVLink protocol ~~enable the communication~~ between GCS\(Ground Control Station\) and PX4 
+MAVLink protocol enable the communication between GCS\(Ground Control Station\) and PX4 
 
 
 
@@ -45,7 +49,7 @@ MAVLink v1 Frame consists of 6headers, 2checksum and one field with data.
     <tr>
       <td style="text-align:left">header2(Payload-length)</td>
       <td style="text-align:left">1</td>
-      <td style="text-align:left">value of Payload-length (n)</td>
+      <td style="text-align:left">Payload-length (n)</td>
     </tr>
     <tr>
       <td style="text-align:left">header3(Packet sequence)</td>
@@ -102,95 +106,74 @@ MAVLink v1 Frame consists of 6headers, 2checksum and one field with data.
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"><del>Field name</del>
-      </th>
-      <th style="text-align:left"><del>Index - Bytes</del>
-      </th>
-      <th style="text-align:left"><del>Purpose and function</del>
-      </th>
+      <th style="text-align:left">Field name</th>
+      <th style="text-align:left">Index - Bytes</th>
+      <th style="text-align:left">Purpose and function</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><del>header1(Start-of-frame)</del>
-      </td>
-      <td style="text-align:left"><del>0</del>
-      </td>
-      <td style="text-align:left"><del>Header pointing to the starting point(0xFE)</del>
-      </td>
+      <td style="text-align:left">header1(Start-of-frame)</td>
+      <td style="text-align:left">0</td>
+      <td style="text-align:left">Header pointing to the starting point(0xFE)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>header2(Payload-length)</del>
-      </td>
-      <td style="text-align:left"><del>1</del>
-      </td>
-      <td style="text-align:left"><del>value of Payload-length (n)</del>
-      </td>
+      <td style="text-align:left">header2(Payload-length)</td>
+      <td style="text-align:left">1</td>
+      <td style="text-align:left">Payload-length (n)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>header3(Packet sequence)</del>
-      </td>
-      <td style="text-align:left"><del>2</del>
-      </td>
+      <td style="text-align:left">header3(INC Flags)</td>
+      <td style="text-align:left">2</td>
       <td style="text-align:left">
-        <p><del><br /></del>
+        <p>
+          <br />
         </p>
-        <p><del>order value in the total packet</del>
-        </p>
+        <p>Incompatibility Flags</p>
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>header4(System ID)</del>
-      </td>
-      <td style="text-align:left"><del>3</del>
-      </td>
-      <td style="text-align:left"><del>ID of the SENDING System</del>
-      </td>
+      <td style="text-align:left">header4(CMP Flags)</td>
+      <td style="text-align:left">3</td>
+      <td style="text-align:left">Compatibility Flags</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>header5(Component ID)</del>
-      </td>
-      <td style="text-align:left"><del>4</del>
-      </td>
-      <td style="text-align:left"><del>ID of the SENDING Component</del>
-      </td>
+      <td style="text-align:left">header5(SEQ number)</td>
+      <td style="text-align:left">4</td>
+      <td style="text-align:left">Packet sequence number</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>header6(Message ID)</del>
-      </td>
-      <td style="text-align:left"><del>5</del>
-      </td>
-      <td style="text-align:left"><del>ID of the message : definition of Payload</del>
-      </td>
+      <td style="text-align:left">header6(System ID)</td>
+      <td style="text-align:left">5</td>
+      <td style="text-align:left">ID of system</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>data(Payload)</del>
-      </td>
-      <td style="text-align:left"><del>6 (n+6)</del>
-      </td>
-      <td style="text-align:left"><del>Data of the message, depends on the message id</del>
-      </td>
+      <td style="text-align:left">header7(Component ID)</td>
+      <td style="text-align:left">6</td>
+      <td style="text-align:left">ID of component</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>checksum1 CRC</del>
-      </td>
-      <td style="text-align:left"><del>(n+7)</del>
-      </td>
-      <td style="text-align:left"><del>Message integrity check</del>
-      </td>
+      <td style="text-align:left">header8(Msg ID)</td>
+      <td style="text-align:left">7 to 9</td>
+      <td style="text-align:left">ID of message type in payload</td>
     </tr>
     <tr>
-      <td style="text-align:left"><del>checksum2 CRC</del>
-      </td>
-      <td style="text-align:left"><del>(n+8)</del>
-      </td>
-      <td style="text-align:left"><del>Network integrity check</del>
-      </td>
+      <td style="text-align:left">data(Payload)</td>
+      <td style="text-align:left">10(n+10)</td>
+      <td style="text-align:left">Message data(depends on mesage type)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">checksum CRC</td>
+      <td style="text-align:left">(n+11)</td>
+      <td style="text-align:left">CRC-16 / MCRF4XX for msg</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">signature</td>
+      <td style="text-align:left">(n+12) to (n+25)</td>
+      <td style="text-align:left">(optional) signature to ensure the link is tamper-proof</td>
     </tr>
   </tbody>
 </table>
-
--&gt; this table need to be edited. for v2
 
 * The minimum packet length is 12 bytes for acknowledgment packets without payload.
 * The maximum packet length is 280 bytes for a signed message that uses the whole payload.
