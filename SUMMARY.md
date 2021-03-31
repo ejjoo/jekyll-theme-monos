@@ -9,4 +9,5 @@
 * [SITL & HITL](sitl-and-hitl.md)
 * [Drone autopilot system : ROS - MAVROS - PX4](ros-mavros-px4.md)
 * [Drone itself : Type & flight principle](drone-itself-type-and-flight-principle.md)
+* [Daily report](daily-report.md)
 

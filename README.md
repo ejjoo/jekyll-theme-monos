@@ -13,7 +13,7 @@ In this course, we will install **ubuntu 18.04**, **ROS**, **MAVROS**, **Gazebo*
 We also need some hardware and software \(such as **Pixhawk**, **Ardupilot** or **PX4**\) in system.
 
 {% hint style="success" %}
-If you also want to see AI __Course_,_ enter __[_here_](https://sierrabaselab.github.io/AI_beginner_course/build/html/index.html)\_\_
+If you also want to see AI __Course_,_ enter __[_here_](https://sierrabaselab.github.io/AI_beginner_course/build/html/index.html) _\(this page is company's page\)_
 {% endhint %}
 
 ## **What is ROS?**
