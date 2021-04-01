@@ -1,6 +1,6 @@
 # Daily report
 
-' 3.31\(수\) 공부내용 및 보고할것
+## ' 3.31\(수\) 공부 및 보고내
 
 * ROS란?
 
@@ -66,6 +66,19 @@ mavlink를 알기전에 mavros부터 알아보면서 mavlink를 알아보자.
 
 
 FC\(Pixhawk with PX4 installed\) &lt;-&gt; Onboard\(Rapsberry Pi\) &lt;-&gt; GCS\(QGroundControl\) == desektop??
+
+
+
+## ' 4.1\(목\) 공부 및 보고내용
+
+* 오늘 공부할거 : MAVLINk 안에서 드론의 비행정보들, 그리고 비행을 제어하기위한 신호 protocol들 
+* + 원래 하던공부 복습, 마브링크 \(피치 롤 요\)
+
+
+
+ 
+
+
 
 
 
