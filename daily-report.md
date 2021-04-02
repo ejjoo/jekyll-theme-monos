@@ -77,7 +77,7 @@ FC\(Pixhawk with PX4 installed\) &lt;-&gt; Onboard\(Rapsberry Pi\) &lt;-&gt; GCS
 
 
 
-* 오늘 공부할거 : MAVLINk 안에서 드론의 비행정보들, 그리고 비행을 제어하기위한 신호 protocol들 어떻게 통신되는
+* 오늘 공부할거 : MAVLINk 안에서 드론의 비행정보들, 그리고 비행을 제어하기위한 신호 protocol들
 
 MAVLink에는 두가지의 메세지 통신모드가 있는데 Topic과 Point to Point이다. Topic은 메세지의 타겟 시스템과 component ID를 보내지 않고 여러 Subscriber가 이 메세지를 받을 수 있다. PTP모드에서는 타겟 ID와 타겟 타겟 컴퍼넌트를 사용한다. 대부분의 경우 위 필드\(타겟 ID, 타겟 컴퍼넌트\)를 사용하고 이 방식은 메세지의 전송을 보장한다.
 
