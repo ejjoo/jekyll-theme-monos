@@ -1,14 +1,4 @@
 # Gazebo 9
 
-## Install Gazebo 9
-
-
-
-
-
-## SITL & HITL
-
-
-
-
+Install Gazebo 9
 
