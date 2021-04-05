@@ -4,7 +4,7 @@
 
 * ROS란?
 
-**ROS는 ROS 패키지의 ROS msg, ROS service, ROS node등을 통해 로봇을 관리하게 해주는 운영체제이다.**
+**ROS는 ROS 내부의 패키 ROS msg, ROS service, ROS node등을 통해 로봇을 관리하게 해주는 운영체제이다.**
 
 **ROS의 구성요소로는 msg, node, service 등이있다.**
 
@@ -40,7 +40,7 @@ mavlink를 알기전에 mavros부터 알아보면서 mavlink를 알아보자.
 **MAVROS는 mavlink를 통해 ROS에서 동작하는 node를 만든다.**  
   
 ‌  
-**Onboard system\(rasp pi\)에 설치되며 fc와  onboard, gcs의 통신을 담당한다.**  
+**Onboard system\(rasp pi\)에 설치되며 fc &lt;-&gt;  onboard &lt;-&gt; gcs의 통신을 담당한다.**  
   
 ‌  
 **MAVROS가 FC와 GCS를 이어주는 다리역할을 하는데 이 다리를 정확히 말하면 MAVROS가 생성한 ROS와 통신이 가능한 node가 그것이다.**  
@@ -57,7 +57,7 @@ mavlink를 알기전에 mavros부터 알아보면서 mavlink를 알아보자.
 
 **HITL이란 FC를 시뮬레이터\(Gazebo\)에 연결하여 시뮬레이션 하는 방식으로  FC에서는 PX4가 작동한다.**
 
-**HITL은 FC\(Pixhawk\)를 컴퓨터에 연결해서 시뮬레이션**
+**HITL은 FC\(Pixhawk\)를 컴퓨터에 연결해서 시뮬레이션**    
 
 \*\*\*\*
 
@@ -116,6 +116,26 @@ Topic모드를 제외하고 각 MAvlink메세지는 System ID와 Component ID필
 필라멘트 종류는 매우많으며 주로 PLA나 ABS를 사용하며 그중에서도 가장 대중적인것이 PLA이다.
 
 PLA는 합성플라스틱 소재의 레진이며 PLA 필라멘트를 출력할때는 노즐온도를 210~220도정도로 설정한다.
+
+
+
+## '4.3 공부한것들 / 보고내용
+
+### 공부한것들 
+
+SolidWorks 사용법 - 스케치 -&gt; 돌출 -&gt; 모델링 
+
+solidworks 체험판 설치하고 사용법 강의보고 간단한 스케치부터 돌출까지 예습해
+
+
+
+### 보고내용 
+
+
+
+
+
+
 
 
 
