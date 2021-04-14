@@ -8,7 +8,8 @@ permalink: /aboutMing
 
 - 송민구
 - NHN Rookie 8기
-- 루키여우TF
+- ~~루키여우TF~~
+- 협업서비스개발실
 - 개발자 - Developer
 - [GIT HUB][git_link], [TistoryBlog][tistory]
 - E-Mail : mingu.song@nhn.com
