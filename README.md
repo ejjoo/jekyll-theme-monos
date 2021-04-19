@@ -1,28 +1,24 @@
+---
+layout: page
+title: about_Ming
+date: 2021-01-25 00:16:00 +0900
+permalink: /aboutMing
 
-## Theme Monos
-> Simple and lightweight theme for Jekyll
 
-### Features
-- Responsive.
-- Syntax Highlight
-- Most optimized theme for tech blog.
-- Lightweight with minimum stylesheet.
-- Easy to customize.
-- Offers category menu.
+---
 
-### _config.yml
-> Code block will look like this.
-```yml
-highlighter-theme: monokai //you can change your syntax color scheme.
-date_format: "%Y-%M-%D" //and date format.
-```
+- 송민구
+- NHN Rookie 8기
+- ~~루키여우TF~~
+- 협업서비스개발실
+- 개발자 - Developer
+- [GIT HUB][git_link], [TistoryBlog][tistory]
+- E-Mail : mingu.song@nhn.com
 
-### Screenshots
-#### Page
-![alt text](/public/img/screenshot-1.png)
-#### Articles
-![alt text](/public/img/screenshot-2.png)
-#### Page - Mobile
-![alt text](/public/img/screenshot-m1.png)
-#### Page - Articles
-![alt text](/public/img/screenshot-m2.png)
+> C, C++ 알고리즘 문제해결을 좋아하는 뉴비 개발자
+>
+> 추가...
+
+[git_link]: https://github.com/MingNine9999
+[tistory]: https://mingnine9999.tistory.com/
+
