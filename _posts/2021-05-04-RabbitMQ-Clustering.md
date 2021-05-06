@@ -156,12 +156,12 @@ category: tech
 
   - 미러링은 policy를 이용해서 설정 가능
 
-  - [reference example][https://www.rabbitmq.com/ha.html#examples]
+  - [reference example](https://www.rabbitmq.com/ha.html#examples)
 
 
 
 ##### 참고자료
 
-- [RabbitMQ reference Clustering Guide][https://www.rabbitmq.com/clustering.html]
+- [RabbitMQ reference Clustering Guide](https://www.rabbitmq.com/clustering.html)
 - [https://jonnung.dev/rabbitmq/2019/08/08/rabbitmq-cluster/]
 
