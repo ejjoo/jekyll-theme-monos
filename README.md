@@ -12,10 +12,6 @@ In this course, we will install **ubuntu 18.04**, **ROS**, **MAVROS**, **Gazebo*
 
 We also need some hardware and software \(such as **Pixhawk**, **Ardupilot** or **PX4**\) in system.
 
-{% hint style="success" %}
-If you also want to see AI __Course_,_ enter __[_here_](https://sierrabaselab.github.io/AI_beginner_course/build/html/index.html) _\(this page is company's page\)_
-{% endhint %}
-
 ## **What is ROS?**
 
 ROS is an open-source, meta-operating system for your robot. It provides the services you would expect from an operating system, including hardware abstraction, low-level device control, implementation of commonly-used functionality, message-passing between processes, and package management. It also provides tools and libraries for obtaining, building, writing, and running code across multiple computers.
@@ -116,7 +112,8 @@ It applies korean, but it can be only used in Windows OS.
 {% tab title="QGroundControl" %}
 ![Source : https://px4-dev.drjlab.com/master/assets/simulation/flightgear/flightgear-multi-vehicle-sitl.jpg](.gitbook/assets/qgroundcontrol.jpeg)
 
-QGroundControl can install firmware PX4 or Ardupilot on the FC of the Pixhawk.
+
+QGroundControl can install firmware PX4 or Ardupilot on the FC of the Pixhawk.
 
 QGC is open source based and has copyright cc4.0\(cc4.0 : Users don't need to publish the source even when they build, modify, develop and distribute for commercial use\)
 
