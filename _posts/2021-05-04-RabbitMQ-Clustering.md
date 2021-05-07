@@ -44,7 +44,7 @@ category: tech
 
   - 각각 모든 노드에서 RabbitMQ시작
 
-    ```
+    ```shell
     # rabbitA
     rabbitmq-server -detached
     # rabbitB
@@ -55,7 +55,7 @@ category: tech
 
   - cluster_status 명령어로 확인하면 각각 노드가 독립적으로 생성된걸 확인 가능
 
-    ```
+    ```shell
     # rabbit A, B, C
     rabbitmqctl cluster_status
     
@@ -66,7 +66,7 @@ category: tech
 
   - rabbitB와 rabbitC에서 rabbitA에 연결되는 클러스터 구성
 
-    ```
+    ```shell
     # rabbitB
     rabbitmqctl stop_app
     # => Stopping node rabbit@rabbitB ...done.
@@ -82,7 +82,7 @@ category: tech
     
     ```
 
-    ```
+    ```shell
     # rabbitC
     rabbitmqctl stop_app
     # => Stopping node rabbit@rabbitC ...done.
