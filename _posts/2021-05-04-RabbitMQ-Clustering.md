@@ -163,5 +163,5 @@ category: tech
 ##### 참고자료
 
 - [RabbitMQ reference Clustering Guide](https://www.rabbitmq.com/clustering.html)
-- [https://jonnung.dev/rabbitmq/2019/08/08/rabbitmq-cluster/]
+- (https://jonnung.dev/rabbitmq/2019/08/08/rabbitmq-cluster/)
 
