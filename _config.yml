@@ -18,10 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Nyeom's Memo
+title: Reofard
 email: 6590f1@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Themed by ejjoo
+description: scripted by nyeom
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://Reofard.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Reofard
