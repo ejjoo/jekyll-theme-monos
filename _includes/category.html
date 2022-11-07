@@ -1,12 +1,12 @@
 <article class="post">
 	<header class="post-header home">
-		<div class="post-title">Category - <span id='category-name'></span></div>
+		<div class="post-title"><span id='category-name'></span></div>
 	</header>
 
 	<div class="post-content">
 		{%- if site.posts.size > 0 -%}
 		<ul class="post-list">
-			{%- for post in site.posts -%}
+			<!-- {%- for post in site.posts -%} -->
 			<li class="post-list-item post-category-{{post.categories}}">
 				<!-- {%- assign date_format = site.date_format | default: "%b %-d, %Y" -%} -->
 				{%- assign date_format = "%Y/%m/%d" -%}
@@ -16,7 +16,7 @@
 				</a>
 				{%- if site.show_excerpts -%}{{ post.excerpt }}{%- endif -%}
 			</li>
-		  	{%- endfor -%}
+		  	<!-- {%- endfor -%} -->
 		</ul>
 	  	{%- endif -%}
 	</div>
